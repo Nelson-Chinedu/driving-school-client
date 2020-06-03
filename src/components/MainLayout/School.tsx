@@ -11,8 +11,8 @@ type Props = {
 
 const StateView: FunctionComponent<Props> = (props) => {
   const router = useRouter();
-  console.log(router.query.id)
-  
+  console.log(router.query.state)
+
   const {State, loading} = props.data;
 
   if (loading || !State){
