@@ -1,17 +1,15 @@
-import React, {FunctionComponent, useState} from 'react';
+import Link from 'next/link';
+import React, {FunctionComponent} from 'react';
 import {graphql} from 'react-apollo';
 import {getStatesQuery} from '../queries/index';
 
 import '../../../assets/stateCard.css';
-import Testing from './testing';
 
 type Props = {
   data: any
 }
 
 const StateCard: FunctionComponent<Props> = (props) => {
-  const [selected, setSelected] = useState('');
-  console.log(selected)
   
   const {states, loading} = props.data;
 
@@ -26,12 +24,15 @@ const StateCard: FunctionComponent<Props> = (props) => {
         
        {states.map((state) => {
          return(
-           <div className="c-StateCard-wrapper md:flex md:justify-between my-8 inline-flex" key={state.id} onClick={(e) => {setSelected(state.id)}}>
+           <Link href='/state/[state]' as={`/state/${state.name}`}>
+             <a>
+           <div className="c-StateCard-wrapper md:flex md:justify-between my-8 inline-flex" key={state.id} >
             <div className="c-StateCard p-16 rounded h-56">
               <h2>{state.name}</h2>
             </div>
            </div>
-           
+           </a>
+           </Link>
          )
        })}
     </div>

@@ -9,4 +9,13 @@ const getStatesQuery = gql`
   }
 `;
 
-export {getStatesQuery};
+const getSchoolsQuery = gql`
+  query($state: String!){
+    State(state: $state){
+      name
+      address
+    }
+  }
+`;
+
+export {getStatesQuery, getSchoolsQuery};
