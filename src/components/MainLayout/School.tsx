@@ -1,5 +1,5 @@
 import React, {FunctionComponent} from 'react';
-import { useRouter, Router } from 'next/router';
+import { useRouter } from 'next/router';
 import {graphql} from 'react-apollo';
 import {getSchoolsQuery} from '../../../src/components/queries/index';
 
