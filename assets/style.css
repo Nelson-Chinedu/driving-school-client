@@ -3,3 +3,14 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.c-Input {
+  border: 1px solid #5a5a5acc;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
