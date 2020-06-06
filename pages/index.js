@@ -9,7 +9,7 @@ import Footer from '../src/components/Footer';
 import StateCard from '../src/components/MainLayout/StateCard';
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql"
+  uri: "http://localhost:8080/graphql"
 })
 
 const LandingPage = () => {
