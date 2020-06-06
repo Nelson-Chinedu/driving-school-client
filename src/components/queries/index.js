@@ -5,6 +5,7 @@ const getStatesQuery = gql`
     states{
       id
       name
+      landmark
     }
   }
 `;
@@ -12,6 +13,7 @@ const getStatesQuery = gql`
 const getSchoolsQuery = gql`
   query($state: String!){
     State(state: $state){
+      id
       name
       address
     }

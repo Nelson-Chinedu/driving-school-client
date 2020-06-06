@@ -1,9 +1,9 @@
-import React, {FunctionComponent} from 'react';
+import React from 'react';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 
 import Navigation from '../../src/components/SharedLayout/Navbar';
-import HeroSection from '../../src/components/MainLayout/HeroSection';
+import StateHeroSection from '../../src/components/MainLayout/StateHeroSection';
 import Footer from '../../src/components/Footer';
 import School from '../../src/components/MainLayout/School';
 
@@ -12,12 +12,12 @@ const client = new ApolloClient({
   uri: "http://localhost:4000/graphql"
 })
 
-const SchoolPage: FunctionComponent<{}> = () => {
+const SchoolPage = () => {
   return(
     <ApolloProvider client={client}>
       <div>
         <Navigation /> 
-        <HeroSection />
+        <StateHeroSection />
         <School />
         <Footer />
       </div>

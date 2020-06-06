@@ -1,14 +1,17 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { useState } from 'react';
 import '../../../../assets/style.css';
 import Input from '../../MainLayout/Input';
+import Link from 'next/link';
 
-const Navigation: FunctionComponent<{}> = () => {
+const Navigation = () => {
   const [ isExpanded, toggleExpansion ] = useState(false);
   return(
-    <div>
+    <div className="sticky">
       <nav className="flex items-center justify-between flex-wrap  p-6">
       <div className="flex items-center flex-shrink-0 text-black mr-6" aria-label="logos">
-        <span className="font-semibold text-xl tracking-tight" aria-label="logo">DrivingNg</span>
+        <Link href="/">
+          <a><span className="font-semibold text-xl tracking-wide" aria-label="logo">DrivingSchool</span></a>
+        </Link>
       </div>
       <div className="block lg:hidden">
         <button onClick={() => toggleExpansion(!isExpanded)} 
@@ -26,8 +29,8 @@ const Navigation: FunctionComponent<{}> = () => {
         <div className="c-Navbar-items text-sm lg:flex-grow">
           <Input 
             type="search" 
-            placeholder="Enter search"
-            className="py-2 px-6"
+            placeholder="Search..."
+            className="py-2 px-6 c-Input"
           />
         </div>
       </div>

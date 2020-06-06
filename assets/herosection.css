@@ -3,16 +3,10 @@
   padding: 0px;
 }
 .c-HeroSection {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  position: relative;
   background-color: rgba(0, 0, 0, 0.5);
   min-height: 70vh;
-  overflow: hidden;
 }
 .c-HeroSection-VideoBg {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -23,5 +17,4 @@
 .c-HeroSection-Intro {
   width: 80%;
   margin: 0px auto;
-  text-align: center;
 }

@@ -24,6 +24,6 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx", "src/components/MainLayout/MainHeroSection.js", "src/components/MainLayout/Input.js", "src/components/MainLayout/School.js", "src/components/MainLayout/StateCard.js", "src/components/queries/index.js", "src/components/SharedLayout/Navbar/index.js", "pages/index.js", "pages/state/[state].js"
   ]
 }
