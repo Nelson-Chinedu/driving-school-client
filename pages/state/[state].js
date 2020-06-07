@@ -9,7 +9,7 @@ import School from '../../src/components/MainLayout/School';
 
 
 const client = new ApolloClient({
-  uri: "http://localhost:8080/graphql"
+  uri: "https://driving-school-api.herokuapp.com/graphql"
 })
 
 const SchoolPage = () => {

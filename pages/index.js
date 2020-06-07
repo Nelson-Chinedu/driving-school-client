@@ -9,7 +9,7 @@ import Footer from '../src/components/Footer';
 import StateCard from '../src/components/MainLayout/StateCard';
 
 const client = new ApolloClient({
-  uri: "http://localhost:8080/graphql"
+  uri: "https://driving-school-api.herokuapp.com/graphql"
 })
 
 const LandingPage = () => {
