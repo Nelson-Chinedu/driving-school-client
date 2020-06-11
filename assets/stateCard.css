@@ -6,9 +6,26 @@
   height: 100%;
   opacity: .4;
 }
-.c-StateCard-wrapper {
-  width: 30%;
-}
 .c-StateCard-name {
   bottom: 90px;
+}
+
+@media (min-width: 640px) and (max-width: 767px) { 
+  .c-StateCard-wrapper {
+    display: inline-flex;
+    width: 40%;
+    margin: 0px 31px;
+  }
+}
+
+@media (width: 768px) { 
+  .c-StateCard-wrapper {
+    width: 29%;
+  }
+}
+
+@media (min-width: 769px) { 
+  .c-StateCard-wrapper {
+    width: 30%;
+  }
 }
