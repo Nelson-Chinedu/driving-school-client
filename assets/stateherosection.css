@@ -10,3 +10,9 @@
   width: 80%;
   margin: 0px auto;
 }
+
+@media (min-width: 768px) { 
+  .c-StateHeroSection {
+    min-height: 30vh;
+  }
+}

@@ -4,7 +4,6 @@
 }
 .c-HeroSection {
   background-color: rgba(0, 0, 0, 0.5);
-  min-height: 70vh;
 }
 .c-HeroSection-VideoBg {
   top: 50%;
@@ -18,3 +17,53 @@
   width: 80%;
   margin: 0px auto;
 }
+
+@media (max-width: 639px) { 
+  .c-HeroSection {
+    min-height: 50vh;
+  }
+  .c-HeroSection-VideoBg{
+    display: none;
+  }
+  .c-HeroSection-image{
+    background-image: url(/driving-in-car.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .c-HeroSection-Intro {
+    width: 90%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) { 
+  .c-HeroSection {
+    min-height: 63vh;
+  }
+}
+
+@media (min-width: 768px) { 
+  .c-HeroSection {
+    min-height: 30vh;
+  }
+  .c-HeroSection-VideoBg {
+    top: 60%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { 
+  .c-HeroSection {
+    min-height: 57vh;
+  }
+}	
+
+@media (min-width: 1025px) { 
+  .c-HeroSection {
+    min-height: 70vh;
+  }
+}	

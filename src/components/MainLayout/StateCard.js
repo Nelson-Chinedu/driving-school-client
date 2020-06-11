@@ -24,8 +24,8 @@ const StateCard = () => {
          return(
            <Link href='/state/[state]' as={`/state/${state.name}`} key={state.id}>
              <a>
-               <div className="c-StateCard-wrapper ml-6 my-8 inline-flex">
-                 <div className="c-StateCard relative w-full rounded h-56">
+               <div className="c-StateCard-wrapper w-10/12 my-0 mx-auto  md:my-0 md:mx-4 md:inline-flex">
+                 <div className="c-StateCard my-12 relative w-full rounded h-56">
                    <img className="rounded w-full" src={state.landmark} alt=""/>
                    <div className="c-StateCard-name absolute text-center w-full">
                      <h2 className="text-white text-xl">{state.name}</h2>

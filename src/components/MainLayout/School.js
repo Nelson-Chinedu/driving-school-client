@@ -29,8 +29,8 @@ const StateView = () => {
         
        {State.map((state) => {
          return(
-           <div className="c-SchoolCard-wrapper ml-6 my-8 inline-flex" key={state.id} >
-            <div className="c-SchoolCard w-full px-5 text-center rounded h-56 border-red-400">
+           <div className="c-SchoolCard-wrapper w-10/12 my-0 mx-auto  md:my-0 md:mx-4 md:inline-flex" key={state.id} >
+            <div className="c-SchoolCard my-12 relative w-full rounded h-56 p-5 text-center h-56 border-red-400">
               <h2 className='my-4 font-semibold'>{state.name}</h2>
               <h4>{state.address}</h4>
             </div>
